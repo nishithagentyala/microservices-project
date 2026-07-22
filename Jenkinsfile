@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh 'docker build -t gentyala/services:v1 /src/Dockerfile'
+               sh 'docker build -t gentyala/services:v1 /src/Dockerfile src'
             }
         }
          stage('Push image to dockerHub') {
